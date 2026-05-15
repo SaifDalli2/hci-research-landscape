@@ -1,0 +1,20 @@
+# Data files (too large for GitHub)
+data/hci_papers.jsonl
+data/hci_papers_filtered.jsonl
+data/hci_papers_w*.jsonl
+data/checkpoint*.json
+data/auto_collect*.log
+data/processed/dtm.npz
+data/processed/vectorizer.pkl
+data/processed/metadata.csv
+data/processed/layer12_terms.json
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store

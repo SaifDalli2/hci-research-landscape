@@ -1,0 +1,12 @@
+requests
+pandas
+numpy
+scipy
+scikit-learn
+prince
+networkx
+pyvis
+matplotlib
+seaborn
+plotly
+tqdm
