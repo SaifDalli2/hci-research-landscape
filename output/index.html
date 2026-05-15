@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCI Research Landscape — Interactive Maps</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#e0e0e0;font-family:'Inter',-apple-system,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:60px 20px}
+h1{font-size:2.4rem;font-weight:800;margin-bottom:8px;background:linear-gradient(90deg,#2979FF,#00E5FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{font-size:1.1rem;color:rgba(255,255,255,0.4);margin-bottom:48px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;max-width:900px;width:100%}
+a.card{display:block;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;text-decoration:none;color:#e0e0e0;transition:all .2s}
+a.card:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);transform:translateY(-2px)}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:6px}
+.card p{font-size:.85rem;color:rgba(255,255,255,0.45);line-height:1.5}
+.card .tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:.7rem;font-weight:600;margin-top:12px}
+.tag.interactive{background:rgba(41,121,255,0.15);color:#2979FF}
+.tag.temporal{background:rgba(0,230,118,0.15);color:#00E676}
+.tag.static{background:rgba(255,234,0,0.15);color:#FFEA00}
+footer{margin-top:48px;font-size:.8rem;color:rgba(255,255,255,0.25);text-align:center}
+footer a{color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+<h1>HCI Research Landscape</h1>
+<p class="subtitle">Data-driven analysis of 30M+ academic papers</p>
+<div class="cards">
+  <a class="card" href="map_layer2_temporal.html">
+    <h2>Topic Evolution (2000–2025)</h2>
+    <p>Layer 2 subject-matter bigrams with year slider. Watch HCI topics emerge, grow, and connect over 25 years.</p>
+    <span class="tag temporal">Timeline + Interactive</span>
+  </a>
+  <a class="card" href="map2_layer2_topics.html">
+    <h2>HCI Topic Clusters</h2>
+    <p>Layer 2 network — actual research topics with methodology language stripped out. 6 communities revealed.</p>
+    <span class="tag interactive">Interactive</span>
+  </a>
+  <a class="card" href="map2_interactive.html">
+    <h2>Research Language Map (Layer 1)</h2>
+    <p>How HCI papers are written — the linguistic patterns and methodology vocabulary across the field.</p>
+    <span class="tag interactive">Interactive</span>
+  </a>
+  <a class="card" href="map_full_30m.html">
+    <h2>Full 30M Paper Landscape</h2>
+    <p>Saturated view of all collected papers including adjacent fields — health, education, engineering, social science.</p>
+    <span class="tag interactive">Interactive</span>
+  </a>
+  <a class="card" href="map3_temporal.html">
+    <h2>Layer 1 Temporal</h2>
+    <p>Research language evolution with year slider. How academic writing patterns in HCI changed over time.</p>
+    <span class="tag temporal">Timeline + Interactive</span>
+  </a>
+  <a class="card" href="map1_semantic_compass.png">
+    <h2>Semantic Compass</h2>
+    <p>Correspondence Analysis — one axis separating social/qualitative HCI from technical/systems HCI.</p>
+    <span class="tag static">Static Image</span>
+  </a>
+</div>
+<footer>
+  <a href="https://github.com/SaifDalli2/hci-research-landscape">GitHub Repository</a> — 30M+ papers from OpenAlex
+</footer>
+</body>
+</html>
